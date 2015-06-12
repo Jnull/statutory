@@ -1,0 +1,40 @@
+{
+  "name": "statutory",
+  "title": "Statutory",
+  "id": "jid1-J19XuM8Nz7J7Fw",
+    "description": "Prevents Private IP Information Leakage exposed through WebRTC",
+    "author": "Jared Null",
+    "license": "MPL 2.0",
+    "version": "2.0",
+    "permissions": {"unsafe-content-script": true},
+    "preferences": [
+      {
+        "type": "bool",
+        "name": "User_Notification_Enabled",
+        "description": "Show All Notifications",
+        "value": true,
+        "title": "Enable All Notifications"
+    },
+      {
+        "type": "file",
+        "name": "GetFile",
+        "description": "Select WhiteList file for webrtc hostnames",
+        "title": "Select WebRTC protection whitelist file"
+      },
+      {
+        "type": "control",
+        "description": "Open WhiteList file (Default is: profileDir/statutory_whitelist.txt)",
+        "label": "Open File",
+        "name": "Open_WhiteList_File",
+        "title": "Open WhiteList File"
+      },
+      {
+        "type": "control",
+        "description": "Open WhiteList Directory (Default is: profileDir)",
+        "label": "Open Folder",
+        "name": "Open_WhiteList_Folder",
+        "title": "Open WhiteList Folder"
+      }
+    ]
+}
+
